@@ -26,16 +26,16 @@ class Location(models.Model):
         db_table = 'locations'
 
 class FlightInformation(models.Model):
-    airplane                  = models.ForeignKey('Airplane', on_delete=models.CASCADE)
-    departure_location        = models.ForeignKey('Location', on_delete=models.CASCADE, related_name='departure_flight_informations')
-    arrival_location          = models.ForeignKey('Location', on_delete=models.CASCADE, related_name='arrival_flight_informations')
-    departure_date            = models.DateField()
-    arrival_date              = models.DateField()
-    departure_time            = models.TimeField()
-    arrival_time              = models.TimeField()
-    normal_remainning_seats   = models.IntegerField()
-    business_remainning_seats = models.IntegerField()
-    price                     = models.DecimalField(decimal_places=3, max_digits=10)
+    airplane                 = models.ForeignKey('Airplane', on_delete=models.CASCADE)
+    departure_location       = models.ForeignKey('Location', on_delete=models.CASCADE, related_name='departure_flight_informations')
+    arrival_location         = models.ForeignKey('Location', on_delete=models.CASCADE, related_name='arrival_flight_informations')
+    departure_date           = models.DateField()
+    arrival_date             = models.DateField()
+    departure_time           = models.TimeField()
+    arrival_time             = models.TimeField()
+    normal_remaining_seats   = models.IntegerField()
+    business_remaining_seats = models.IntegerField()
+    price                    = models.DecimalField(decimal_places=3, max_digits=10)
 
     class Meta:
         db_table = 'flight_informations'
@@ -72,7 +72,7 @@ class Passenger(models.Model):
     last_name  = models.CharField(max_length=100)
     birthday   = models.DateField()
     gender     = models.CharField(max_length=100)
-    conuntry   = models.CharField(max_length=100)
+    country    = models.CharField(max_length=100)
 
     class Meta:
         db_table = 'passengers'
