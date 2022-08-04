@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'tickets',
     'books',
     'core',
-    'django_extensions',
 ]
 
 MIDDLEWARE = [
