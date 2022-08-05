@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.http import JsonResponse
+from django.views import View
 
-# Create your views here.
+from freepass import settings
+
+class BookView(View):
+    def get(self, request):
+        
+
+
+        result = {}
+
