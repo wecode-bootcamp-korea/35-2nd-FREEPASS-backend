@@ -12,9 +12,13 @@ class FlightLocationView(View):
         locations = Location.objects.all()
     
         result = [{
-                'id'       : location.id,
-                'name'     : location.name,
-                'code'     : location.code,  
+                'id'        : location.id,
+                'city_name' : location.name,
+                'code'      : location.code,
+                'latitude'  : location.latitude,
+                'longitude' : location.longitude,
+
         } for location in locations]
 
         return JsonResponse({"result":result}, status=200)
+        
