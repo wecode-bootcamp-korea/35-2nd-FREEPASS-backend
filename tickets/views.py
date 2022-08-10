@@ -13,7 +13,8 @@ class FlightLocationView(View):
                 'code'      : location.code,
                 'latitude'  : location.latitude,
                 'longitude' : location.longitude,
-            } for location in locations
-        ]
+                'image'     : location.image,
+
+        } for location in locations]
 
         return JsonResponse({"result":result}, status=200)
