@@ -34,13 +34,13 @@
  
  
 ## 모델링
-<img width="800" alt="https://user-images.githubusercontent.com/60742666/184282199-abd02717-57e8-4f49-8c64-5df41859709e.png">
+<img width="800" src="https://user-images.githubusercontent.com/60742666/184282199-abd02717-57e8-4f49-8c64-5df41859709e.png">
 
 ## 사이트 시현 영상
 - 구현 예정
 
 ## API 명세서
-<img width="800" alt="https://user-images.githubusercontent.com/60742666/184282463-e11086fb-d781-443a-aec7-368322335037.png">
+<img width="800" src="https://user-images.githubusercontent.com/60742666/184282463-e11086fb-d781-443a-aec7-368322335037.png">
 
 * [취뽀 FreePass API](https://www.notion.so/API-a7f616c1ec444831ac1bd8cda523b707)를 보시면, 자세한 API를 확인 가능합니다.
 
